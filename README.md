@@ -14,7 +14,7 @@ This project is designed to monitor the entry and exit movements of bees using i
 
 - Python 3.x
 - [Adafruit_ADS1x15](https://pypi.org/project/Adafruit-ADS1x15/) - for communication with the ADS1115 ADC
-- [Adafruit_DHT](https://pypi.org/project/Adafruit-DHT/) - for reading temperature and humidity sensor data (if applicable)
+- [Adafruit_DHT](https://pypi.org/project/Adafruit-DHT/) - for reading temperature and humidity sensor data
 - [pymysql](https://pypi.org/project/PyMySQL/) - for connecting to MySQL database
 - [ThreadPoolExecutor](https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.ThreadPoolExecutor) - for concurrent processing of multiple sensor data inputs
 
@@ -49,8 +49,6 @@ The program will continuously read sensor data, detect entry and exit events, an
 - **Threshold Settings**: The `THRESHOLD` value is set to 6000, meaning any reading above this value will be considered as a bee entering or exiting.
 
 ## Database Table Structure
-
-Ensure your database has the following table structure:
 
 ```sql
 CREATE TABLE `bee_counter_test` (
